@@ -1,11 +1,3 @@
-"""
-Project for Week 2 of "Python Data Visualization".
-Read World Bank GDP data and create some basic XY plots.
-
-Be sure to read the project description page for further information
-about the expected behavior of the program.
-"""
-
 import csv
 import pygal
 
@@ -25,7 +17,7 @@ def read_csv_as_nested_dict(filename, keyfield, separator, quote):
       field values for that row.
     """
     dict_return = {}
-    with open("C:/Users/ssemi/OneDrive/Masaüstü/Semih/Coursera/Python Rice/Python Rice Course 4/Project 1/"+filename, "r", encoding="utf-8") as csvfile:
+    with open(filename, "r", encoding="utf-8") as csvfile:
         file_reader = csv.DictReader(csvfile, delimiter=separator, quotechar=quote)
         for row in file_reader: 
             key = row[keyfield]
