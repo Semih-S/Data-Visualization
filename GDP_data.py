@@ -125,7 +125,6 @@ def test_render_xy_plot():
                    "isp_gdp_xy_uk+usa.svg")
 
 
-# Make sure the following call to test_render_xy_plot is commented out
-# when submitting to OwlTest/CourseraTest.
+
 
 test_render_xy_plot()
